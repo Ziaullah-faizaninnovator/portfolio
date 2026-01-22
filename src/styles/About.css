@@ -1,0 +1,345 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 6rem 8%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a1929, #0f2027, #152b3c);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, rgba(0, 229, 255, 0.1) 0%, transparent 50%);
+}
+
+.about-text {
+  flex: 1;
+  max-width: 700px;
+  z-index: 1;
+}
+
+.intro {
+  color: #00e5ff;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about-text h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #00e5ff, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #00e5ff;
+  text-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #e0f7fa;
+  margin-bottom: 1.5rem;
+  padding-right: 20px;
+}
+
+.education-section {
+  margin: 2.5rem 0;
+}
+
+.education-section h3 {
+  color: #00e5ff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education-section h3::before {
+  content: '🎓';
+}
+
+.education-card {
+  background: rgba(0, 229, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.8rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+}
+
+.education-card h4 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.institute {
+  color: #00e5ff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.duration {
+  color: #90a4ae;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.education-details {
+  color: #cfd8dc;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-left: 3px solid #00e5ff;
+  padding-left: 1rem;
+}
+
+.about-text h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00e5ff;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-text h3:nth-of-type(3)::before {
+  content: '🌐';
+}
+
+.skills-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skills-buttons span {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 25px;
+  color: #ffffff;
+  cursor: default;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.skills-buttons span:hover {
+  background: #00e5ff;
+  color: #0f2027;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 229, 255, 0.3);
+}
+
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  background: rgba(0, 229, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  color: #00e5ff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #00e5ff;
+  color: #0f2027;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 229, 255, 0.3);
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.image-container {
+  position: relative;
+  width: 420px;
+  height: 550px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+  border: 3px solid #00e5ff;
+  box-shadow: 0 20px 40px rgba(0, 229, 255, 0.2);
+  filter: brightness(1.05) contrast(1.1);
+  transition: transform 0.5s ease;
+}
+
+.about-image img:hover {
+  transform: perspective(1000px) rotateY(5deg);
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  width: 90%;
+}
+
+.experience-badge {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  transition: all 0.3s ease;
+}
+
+.experience-badge:hover {
+  transform: translateY(-5px);
+  border-color: #00e5ff;
+  box-shadow: 0 5px 20px rgba(0, 229, 255, 0.3);
+}
+
+.exp-number {
+  color: #00e5ff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.exp-text {
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 1100px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 4rem 5%;
+    gap: 3rem;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 2.8rem;
+  }
+
+  .description {
+    padding-right: 0;
+  }
+
+  .skills-buttons,
+  .social-links {
+    justify-content: center;
+  }
+
+  .image-container {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text h2 {
+    font-size: 2.3rem;
+  }
+
+  .description {
+    font-size: 1.05rem;
+  }
+
+  .image-container {
+    width: 280px;
+    height: 360px;
+  }
+
+  .experience-badge {
+    padding: 0.8rem 1rem;
+    min-width: 100px;
+  }
+
+  .exp-number {
+    font-size: 1.5rem;
+  }
+
+  .exp-text {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 3rem 1rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .skills-buttons span {
+    padding: 10px 18px;
+    font-size: 0.85rem;
+  }
+
+  .social-link {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .image-container {
+    width: 250px;
+    height: 320px;
+  }
+}
