@@ -10,7 +10,7 @@ const Projects = () => {
     title: "Personal Portfolio Website",
     description: "A modern, responsive portfolio website built with React, featuring smooth animations, optimized performance, and showcasing projects, skills, and experience with an elegant UI/UX design.",
     github: "https://github.com/Ziaullah-faizaninnovator/My_Portfolio",
-    live: "https://ziaullahfaizan-nine-pied-28.vercel.app/",
+    live: "https://portfolio-q5yv5l5j6-zias-projects-d176fb0a.vercel.app/",
     img: "https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=600&h=400&fit=crop",
     tags: ["React", "JavaScript", "CSS", "Frontend", "Responsive"],
     category: "web",
