@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import '../styles/Header.css'
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "../styles/Header.css";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const closeMenu = () => {
-    setIsMenuOpen(false)
-  }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="navbar">
@@ -21,8 +21,8 @@ const Header = () => {
       </div>
 
       {/* Hamburger Menu Button for Mobile */}
-      <button 
-        className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`}
+      <button
+        className={`mobile-menu-btn ${isMenuOpen ? "active" : ""}`}
         onClick={toggleMenu}
         aria-label="Toggle navigation menu"
       >
@@ -32,46 +32,58 @@ const Header = () => {
       </button>
 
       {/* Navigation Links */}
-      <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <NavLink 
-          to="/" 
-          end 
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+      <nav className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
           onClick={closeMenu}
         >
           Home
         </NavLink>
-        <NavLink 
-          to="/about" 
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
           onClick={closeMenu}
         >
           About
         </NavLink>
-        <NavLink 
-          to="/projects" 
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
           onClick={closeMenu}
         >
           Projects
         </NavLink>
-        <NavLink 
-          to="/blogs" 
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+        <NavLink
+          to="/blogs"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
           onClick={closeMenu}
         >
           Blogs
         </NavLink>
-        <NavLink 
-          to="/services" 
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+        <NavLink
+          to="/services"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
           onClick={closeMenu}
         >
           Services
         </NavLink>
-        <NavLink 
-          to="/contact" 
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
           onClick={closeMenu}
         >
           Contact
@@ -79,11 +91,9 @@ const Header = () => {
       </nav>
 
       {/* Overlay for mobile when menu is open */}
-      {isMenuOpen && (
-        <div className="menu-overlay" onClick={closeMenu}></div>
-      )}
+      {isMenuOpen && <div className="menu-overlay" onClick={closeMenu}></div>}
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
