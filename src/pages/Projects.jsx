@@ -131,6 +131,17 @@ const Projects = () => {
      category: "web",
     year: "2025"
   }
+  , {
+  id: 13,
+  title: "AI Assistant Chat App",
+  description: "A beautiful, responsive AI chat application built with React that uses Google's Gemini AI to answer your questions. Features chat history, quick questions, and a clean UI.",
+  github: "https://github.com/Ziaullah-faizaninnovator/AI-assistant-project",
+  live: "https://portfolio-q5yv5l5j6-zias-projects-d176fb0a.vercel.app/",
+  img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop&crop=center",
+  tags: ["React", "JavaScript", "Gemini AI", "Chat", "Responsive", "API"],
+  category: "web",
+  year: "2025"
+}
 ];
 
   const filteredProjects = activeFilter === 'all' 
