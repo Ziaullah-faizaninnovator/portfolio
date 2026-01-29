@@ -137,7 +137,7 @@ const Projects = () => {
     description: "A beautiful, responsive AI chat application built with React that uses Google's Gemini AI to answer your questions. Features chat history, quick questions, and a clean UI.",
     github: "https://github.com/Ziaullah-faizaninnovator/AI-assistant-project",
     live: "https://portfolio-q5yv5l5j6-zias-projects-d176fb0a.vercel.app/",
-    img: "https://images.unsplash.com/photo-1581092795360-5b9b5c963f0e?w=600&h=400&fit=crop&crop=center",
+    img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&crop=center",
     tags: ["React", "JavaScript", "Gemini AI", "Chat", "Responsive", "API"],
     category: "web",
     year: "2025"
@@ -148,7 +148,7 @@ const Projects = () => {
     description: "This project is a modern and fully responsive salon landing page designed to showcase a beauty salon or barber shop in a clean and professional way.",
     github: "https://github.com/Ziaullah-faizaninnovator/Saloon-Landing-page/tree/main",
     live: "https://ziaullah-faizaninnovator.github.io/Saloon-Landing-page/",
-    img: "https://images.unsplash.com/photo-1571977424419-d03f1b7f8c2e?w=600&h=400&fit=crop&crop=center",
+    img: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop&crop=center",
     tags: ["JavaScript", "Responsive"],
     category: "web",
     year: "2025"
@@ -159,7 +159,7 @@ const Projects = () => {
     description: "This project is a modern and fully responsive doctor landing page designed for clinics, hospitals, or individual medical professionals.",
     github: "https://github.com/Ziaullah-faizaninnovator/Doctor-landing-Responsvie-page",
     live: "https://ziaullah-faizaninnovator.github.io/Doctor-landing-Responsvie-page/",
-    img: "https://images.unsplash.com/photo-1580281658623-84b5567b8e3f?w=600&h=400&fit=crop&crop=center",
+    img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop&crop=center",
     tags: ["JavaScript", "Responsive"],
     category: "web",
     year: "2025"
@@ -169,8 +169,8 @@ const Projects = () => {
     title: "Lawyer Responsive Landing Page",
     description: "This project is a modern and fully responsive lawyer landing page designed for law firms or individual legal professionals.",
     github: "https://github.com/Ziaullah-faizaninnovator/Lawyer-Landing-Responsive-Page/tree/main",
-    live: "https://portfolio-q5yv5l5j6-zias-projects-d176fb0a.vercel.app/",
-    img: "https://images.unsplash.com/photo-1596496055863-f3b7463f2641?w=600&h=400&fit=crop&crop=center",
+    live: "https://ziaullah-faizaninnovator.github.io/Lawyer-Landing-Responsive-Page/",
+    img: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop&crop=center",
     tags: ["React", "JavaScript", "Responsive", "Landing Page"],
     category: "web",
     year: "2025"
