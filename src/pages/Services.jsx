@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Services.css'
-
+import { Link } from 'react-router-dom'
 const Services = () => {
   const services = [
     {
@@ -225,16 +225,12 @@ const Services = () => {
             <p className="cta-text">
               Let's discuss how I can help bring your ideas to life with quality development and reliable solutions.
             </p>
-            <div className="cta-buttons">
-              <a href="/contact" className="cta-btn primary">
-                <span className="btn-icon">📧</span>
-                <span className="btn-text">Contact Me</span>
-              </a>
-              <a href="/projects" className="cta-btn secondary">
-                <span className="btn-icon">📁</span>
-                <span className="btn-text">View Projects</span>
-              </a>
-            </div>
+             <Link to="/projects" className="btn primary">
+            View Projects
+          </Link>
+          <Link to="/contact" className="btn secondary">
+            Contact Me
+          </Link>
           </div>
         </div>
       </div>

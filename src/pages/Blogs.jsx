@@ -51,6 +51,20 @@ const Blogs = () => {
       category: "Programming",
       views: "3.8K"
     },
+    
+    {
+      id: 5,
+      title: " Building Your Own AI Chat ",
+      description: "Have you ever wanted to create your own AI chat assistant like ChatGPT but didn't know where to start? I was in the same position just a few weeks ago. Today, I'm sharing my journey of building a fully functional AI chat application that anyone can create - completely for FREE.",
+      img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+      link: "https://medium.com/@ziaullahinnovator/building-your-own-ai-chat-assistant-a-complete-guide-for-beginners-34f26243ce47",
+      date: "jan 24, 2026",
+      platform: "Medium",
+      readTime: "3 min read",
+      category: "Learning",
+      views: "K"
+    },
+
     // {
     //   id: 5,
     //   title: "The Power of Consistent Learning in Tech",
@@ -125,8 +139,8 @@ const Blogs = () => {
                 <div className="blog-overlay">
                   <span className="blog-category">{blog.category}</span>
                   <div className="blog-views">
-                    <span className="views-icon">👁️</span>
-                    <span className="views-count">{blog.views}</span>
+                    {/* <span className="views-icon">👁️</span> */}
+                    {/* <span className="views-count">{blog.views}</span> */}
                   </div>
                 </div>
               </div>
